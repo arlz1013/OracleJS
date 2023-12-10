@@ -1,6 +1,8 @@
-# Un centro cultural quiere desarrollar un sistema para mantener y consultar la información de la historia de la música.
+# Actividad
 
-## SQL tables 
+## Un centro cultural quiere desarrollar un sistema para mantener y consultar la información de la historia de la música.
+
+### SQL tables 
 
 #### Para esto se organiza la información por épocas, de las cuales se sabe el nombre único,diferentes características relevantes, el período (año de comienzo y año final) y los géneros musicales de la época.
 
@@ -65,4 +67,4 @@
 ### Tenga en cuenta que una obra famosa pertenece a un solo género, que una obra famosa la componen
 
 
-## SQL Disparadores 
+### SQL Disparadores 
