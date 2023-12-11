@@ -1,5 +1,5 @@
 {
     "user" : "root",
-    "password": "admin",
+    "password": "0000",
     "connectionString": "localhost/xepdb1"
 }
