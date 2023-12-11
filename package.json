@@ -13,7 +13,6 @@
     "author": "JuanDa",
     "license": "MIT",
     "dependencies": {
-        "live-server": "^1.2.2",
         "oracledb": "^6.0"
     }
 }
