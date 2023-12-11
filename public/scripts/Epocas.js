@@ -22,5 +22,4 @@ var Epocas = [
     }
 ];
 
-
-module.exports = Epocas
+export default Epocas;

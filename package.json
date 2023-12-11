@@ -5,14 +5,15 @@
     "description": "Demo App",
     "main": "index.js",
     "scripts": {
-        "OracleConn": "node ./Service/OracleConn/Conn.js"
-      },
+        "server": "live-server"
+    },
     "keywords": [
         "myapp"
     ],
-    "author":"JuanDa",
-    "license":"MIT",
+    "author": "JuanDa",
+    "license": "MIT",
     "dependencies": {
+        "live-server": "^1.2.2",
         "oracledb": "^6.0"
     }
 }
