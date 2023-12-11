@@ -20,7 +20,8 @@
 >   * Id Int Not Null Primary Key,
 >   * Nombre Varchar(30),
 >   * Origenes Varchar(200),
->   * IdEpoca Int Foreign Key References Epocas(Id)
+>   * IdEpoca Int,
+>   * FOREIGN KEY (IdEpoca) REFERENCES Epocas(Id)
 > - );
 
 ### Sabemos que una época tiene varios géneros, pero que un género pertenece a una sola época.
@@ -33,8 +34,10 @@
 >   * Nacimiento Date,
 >   * Muerte Date,
 >   * Bibliografia Varchar2(300),
->   * IdGenero Int Foreign Key References Generos(Id),
->   * IdObrasFamosas Int Foreign Key References Obras Famosas(Id)
+>   * IdGenero Int,
+>   * IdObrasFamosas Int,
+>   * FOREIGN KEY (IdGenero) REFERENCES Generos(Id),
+>   * FOREIGN KEY (IdObrasFamosas) REFERENCES ObrasFamosas(Id)
 > - );
 
 ### Un género tiene varios músicos, pero un músico pertenece a un solo género.
@@ -47,8 +50,9 @@
 >   * LugarCrear Varchar2(300),
 >   * Creador Varchar2(300),
 >   * TpInstrumento Varchar2(300),
->   * Materiales Varchar2(300)
->   * IdGenero Int Foreign Key References Generos(Id)
+>   * Materiales Varchar2(300),
+>   * IdGenero Int,
+>   * FOREIGN KEY (IdGenero) REFERENCES Generos(Id)
 > - );
 
 ### En un género se usan varios instrumentos, y un instrumento aparece en varios géneros.
@@ -58,9 +62,10 @@
 > - Create Table ObrasFamosas (
 >   * Id Int Not Null Primary Key,
 >   * Nombre Varchar(30),
->   * AñoLanzamineto Date,
->   * Partutra Varchar2(300),
->   * IdGenero Int Foreign Key References Generos(Id)
+>   * Lanzamineto Date,
+>   * Partitura Varchar2(300),
+>   * IdGenero Int,
+>   * FOREIGN KEY (IdGenero) REFERENCES Generos(Id)
 > - );
 
 
